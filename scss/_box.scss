@@ -1,0 +1,14 @@
+
+.box{
+    font-family: $firstfont;
+    font-weight: $textMed;
+    font-size: $textReg;
+    color:  $White_color;
+	width: 90%;
+    height: auto;
+    margin: 50px auto;
+    padding: 40px 20px;
+    border: dotted $firstcolor;
+    background-color: $firstcolor;
+    overflow-y: auto;
+}

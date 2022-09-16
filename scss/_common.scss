@@ -1,0 +1,36 @@
+
+h1{
+    color:$firstcolor;
+}
+
+h2{
+    color:$secondcolor;
+}
+
+h3{
+    color:$thirdcolor;
+}
+
+body{
+	background-image: url(../img/circuit.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
+
+main{ 
+    section {
+       
+        article{
+            color: $secondcolor;
+            font-weight:$textReg;
+        }
+    }
+}
+
+main{ 
+    section {
+        img{
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,18 @@
+
+$firstcolor: rgba(55, 113, 121, 0.966) ;
+$secondcolor: rgb(179, 202, 245);
+$thirdcolor:rgb(179, 202, 245);
+$WA_color:#27af2e;
+$White_color:white;
+
+.bg-blue{
+    background-color:  $firstColor;
+ }
+
+.bg-lblue{
+    background-color: $secondcolor;
+}
+
+.bgLight{
+	background-color:$thirdcolor ;
+}
