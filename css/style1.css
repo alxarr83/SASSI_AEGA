@@ -27,6 +27,7 @@ h1,h2,h3{
 h1{
     color: rgba(135, 188, 196, 0.966) ;
     font-size: 4rem;
+    
 }
 
 h2{
@@ -45,67 +46,68 @@ p{
 	font-size: 1.6rem;
 }
 
-/*Nav1*/
+ /*Animations*/
 
-nav{
-
-    background-color:  rgba(32, 44, 151, 0.966) ; 
-	position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-	padding: 6px 20px;
-    display: flex;
-	justify-content: space-between;
-	align-items: center;
+.linear-gradient{
+	background: linear-gradient(to right, rgb(192, 255, 206), rgb(4, 126, 4));
 }
 
-nav section ul{
-	list-style:none;
-	display: inline-block;
-	margin-left: 30px;
+.transform:hover{
+	transform: translate(-10px,10px);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.scale:hover{
+	transform: scaleX(0.8);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+.skew:hover{
+	transform: skewX(-10deg);
+	cursor: pointer;
+	transition: transform 1s;
+}
+
+button{
+	width: 100px;
+	height: 30px;
+	background: rgb(10, 95, 95);
 	display: flex;
-
+	justify-content: center;
+	align-items: center;
+	color: black;
+	margin-left: 10px;
+	border:none;
+	border-radius: 4px;
+	transition: all 2s;
 }
 
-nav section ul li{
-
-list-style: none;
-margin-right: 20px;
+button:hover{
+	background: linear-gradient(to top, rgb(82, 150, 206), rgb(7, 28, 121));
+	cursor: pointer;
+	
 }
 
-nav section ul li a{          
-		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 2.5rem;
-		text-decoration: none;
-		color: rgb(179, 202, 245);
+@keyframes headerAnimation{
+	0%{background-image: url(../img/FIGO_PROJECT11.jpg)}
+	25%{background-image: url(../img/FIGO_PROJECT22.jpg)}
+	50%{background-image: url(../img/FIGO_TRUCK.jpeg)}
+	75%{background-image: url(../img/FIGO_PROJECT2.jpg)}
+	100%{background-image: url(../img/FIGO_PROJECT1.webp)}
 }
 
-
-nav section ul li a:hover{
-color: black;
-text-decoration: underline;
-} 
-/*Nav1*/
-
-/*Main*/
-main ul li{
-    list-style: disc;
-    color: rgb(200, 219, 190);
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.25rem;
-    margin-left: 30px;
+header{
+	align-items: center;
+	height: 25vh;
+    width: 100%;
+	
+	background-size: cover;
+	animation-name: headerAnimation;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
 }
-
-main section p{
-    color: rgb(200, 219, 190);
-    font-family:'Source Sans Pro', sans-serif;
-    font-size: 2.5rem;
-    line-height: 2.2rem;
-    font-weight: 800;
-}
-
 
 /* ============== MOBILE FIRST ================== */
 /*definition of GRID LAYOUT */
@@ -142,8 +144,7 @@ main section p{
 #aside{
 	background-color: rgba(8, 22, 97, 0.966);
 	padding: 20px 0;
-	grid-area: aside;
-	
+	grid-area: aside;    
 
 }
 
@@ -152,54 +153,19 @@ main section p{
 }
 
 
-/* inicia botonera*/ 
-.buttons {
-		background-color: rgba(20, 111, 196, 0.5);
-		/*position*/
-		position: sticky;
-		top: 0;
-		/*padding*/
-		padding: 10px 30px;
-		/****display flex *****/
-		/* --- NAV EN COLUMNA EN MOBILE --- */
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-
-	.buttons img{
-		width: 200px;
-		margin-bottom: 30px;
-	}
-
-	.buttons ul{
-		/****display flex****/
-		display: flex;
-	}
-
-	.buttons ul li{
-		list-style: none;
-		margin-right: 20px;
-	}
-
-		.buttons ul li a{
-			font-size: 1.8rem;
-			text-decoration: none;
-			color: rgba(135, 188, 196, 0.966)
-		}
-
-		/*hover*/
-		.buttons ul li a:hover{
-			color: black;
-			font-weight: 600;
-		}
-
 /* ============== ENDS MOBILE FIRST ================== */
 
 
 .textBold{
 	font-weight: 600;
+	font-size: 2rem;
+	color: white;
+}
+
+.textBlack{
+	font-weight: 600;
+	font-size: 1.8rem;
+	color:black;
 }
 
 .textCenter{
@@ -212,6 +178,10 @@ main section p{
 
 .textLeft{
 	text-align: left;
+}
+
+.textJustify{
+	text-align: justify;
 }
 
 .bgLight{
@@ -263,8 +233,6 @@ main section p{
 
 }
 
-
-
 /*BEM Class */
 .add__WA{
 	text-align: center;
@@ -276,11 +244,6 @@ main section p{
 	/*padding*/
 	padding: 4px 0;
     font-weight: 800   
-}
-
-.encabezado__img--fluid{
-	/*size*/
-	width: 100%;
 }
 
 /*footer*/
@@ -316,19 +279,11 @@ main section p{
 
 		#productos .galeria figure figcaption{
 			font-size: 3.5rem;
-			color: black;
 			padding: 10px 0;
 			background-color: rgb(192, 201, 212);
 			text-align: center;
 		}
 
-		#productos .galeria p.price{
-			font-size: 3rem;
-			color: rgba(11, 35, 100, 0.5) ;
-			padding-bottom: 10px;
-			background-color: rgb(157, 201, 195);
-			text-align: center;
-		}
 
 /* PRODUCTOS*/
 .Nav2{
@@ -336,20 +291,11 @@ main section p{
 	color:black ;
 	padding: 10px 30px;
 	font-size: 1.8rem;
-	line-height: 1.5em;
+	line-height: 2.8rem;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
-
-	.Nav2 form{
-		margin-bottom: 20px;
-	}
-
-	.Nav2 img{
-		margin-bottom: 30px;
-	}
-
 
 /* ======================= media queries INDEX ======================= */
 
@@ -388,7 +334,7 @@ main section p{
 	
 	.container{
 		display: grid;
-		grid-template-columns: 20vw 70vw 10vw;
+		grid-template-columns: 15vw 58vw 10vw;
 		grid-template-rows: auto;
 		grid-template-areas: 
 		"nav nav nav" 
@@ -433,4 +379,4 @@ main section p{
 
 }
 
-/* ======================= media queries ======================= */
+

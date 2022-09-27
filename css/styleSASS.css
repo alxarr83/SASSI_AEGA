@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&family=Source+Sans+Pro:wght@300&display=swap");
 .bg-blue {
-  background-color: rgba(20, 111, 196, 0.5);
+  background-color: rgba(15, 26, 128, 0.7);
 }
 
 .bg-lblue {
-  background-color: rgb(200, 219, 190);
+  background-color: rgb(34, 149, 172);
 }
 
 .bgLight {
@@ -24,19 +26,10 @@ html {
   font-size: 62.5%;
 }
 
-/*
-@mixin text_p ($size,$interline,$color){
-	font-size: $size;
-	line-height: $interline;
-	color:$color;
-	padding: 10px;
-	font-family: $firstFont;
-	font-weight: $textBold;
-}*/
 .box {
   size: 2.5rem;
-  line-height: 2.2REM;
-  color: rgb(200, 219, 190);
+  line-height: 2rem;
+  color: rgb(34, 149, 172);
   padding: 10px;
   font-family: "Source Sans Pro", sans-serif;
   font-weight: 800;
@@ -44,25 +37,11 @@ html {
   height: auto;
   margin: 50px auto;
   padding: 40px 20px;
-  border: dotted rgba(15, 26, 128, 0.7019607843) 2px;
-  background-color: rgba(55, 113, 121, 0.966);
+  border: dotted rgba(15, 26, 128, 0.7) 2px;
+  background-color: rgba(15, 26, 128, 0.7);
   overflow-y: auto;
 }
 
-/*
-.box-titlel{
-	font-size: $textBig;
-}
-
-.box-title2{
-	font-size: 3rem;
-}
-
-.box_titlem{
-	font-size: 2rem;
-	margin: 5px 0;
-    margin-bottom: 30px;
-}*/
 .box_Img {
   width: 985px;
   height: 415px;
@@ -76,11 +55,11 @@ html {
 }
 
 .bg-blue {
-  background-color: rgba(20, 111, 196, 0.5);
+  background-color: rgba(15, 26, 128, 0.7);
 }
 
 .bg-lblue {
-  background-color: rgb(200, 219, 190);
+  background-color: rgb(34, 149, 172);
 }
 
 .bgLight {
@@ -99,11 +78,11 @@ html {
 }
 
 .bg-blue {
-  background-color: rgba(20, 111, 196, 0.5);
+  background-color: rgba(15, 26, 128, 0.7);
 }
 
 .bg-lblue {
-  background-color: rgb(200, 219, 190);
+  background-color: rgb(34, 149, 172);
 }
 
 .bgLight {
@@ -127,14 +106,12 @@ html {
   background-color: #27af2e;
   color: white;
   font-size: 2.25rem;
-  /*padding*/
   padding: 4px 0;
   font-weight: 800;
 }
 
-.buttons {
-  background-color: rgba(20, 111, 196, 0.5);
-  /*position*/
+.buttonsMenu {
+  /*position background-color: rgba(20, 111, 196, 0.5);*/
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -143,40 +120,18 @@ html {
   /****display flex *****/
   /* --- NAV EN COLUMNA EN MOBILE --- */
   display: flex;
+  flex-direction: column;
   align-items: center;
-  flex-direction: row;
-  justify-content: right;
-}
-
-.buttons img {
-  width: 200px;
-  margin-bottom: 30px;
-}
-
-.buttons ul {
-  /****display flex****/
-  display: flex;
-}
-
-.buttons ul li {
-  list-style: none;
-  margin-right: 20px;
-}
-
-.buttons ul li a {
-  font-size: 1.8rem;
-  text-decoration: none;
-  color: rgba(135, 188, 196, 0.966);
+  justify-content: center;
 }
 
 /*hover*/
-.buttons ul li a:hover {
+.buttonsMenu ul li a:hover {
   color: black;
   font-weight: 600;
 }
 
 .encabezado__img--fluid {
-  /*size*/
   width: 100%;
 }
 
@@ -186,32 +141,54 @@ body {
   background-attachment: fixed;
 }
 
-/*Main*/
-main ul li {
-  list-style: disc;
-  color: rgb(200, 219, 190);
-  text-decoration: none;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 2.25rem;
-  margin-left: 30px;
+.textMenu {
+  font-weight: 800;
+  font-size: 2rem;
+  color: white;
 }
 
-/*main section p{
-   // color: rgb(200, 219, 190);
-    font-family:'Source Sans Pro', sans-serif;
-    font-size: 2.5rem;
-    line-height: 2.2rem;
-    font-weight: 800;
-}*/
-.text_p1, p, h3, h2, h1 {
+.textP1, h3, h2, h1 {
   font-family: "Source Sans Pro", sans-serif;
-  color: rgba(20, 111, 196, 0.5);
+  color: rgba(15, 26, 128, 0.7);
   font-size: 4rem;
+  text-align: center;
+  size: 800;
+}
+
+.textList, p {
+  color: rgb(179, 202, 245);
+  line-height: 4rem;
+  font-size: 3rem;
+}
+
+.text_Justify {
+  text-align: justify;
+}
+
+.textBold {
+  font-weight: 600;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+h1 {
+  color: black;
+  background-color: rgb(34, 149, 172);
 }
 
 h2 {
   color: rgb(179, 202, 245);
-  font-size: 3.8rem;
+  font-size: 4rem;
 }
 
 h3 {
@@ -219,16 +196,32 @@ h3 {
   font-size: 3rem;
 }
 
-p {
-  color: #e8f3f3;
-  line-height: 2rem;
-  font-size: 1.6rem;
+.encabezado__img--fluid {
+  /*size*/
+  width: 100%;
+}
+
+.Nav2 {
+  background-color: rgba(164, 224, 211, 0.8);
+  color: black;
+  padding: 10px 30px;
+  font-size: 3rem;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Nav2 form {
+  margin-bottom: 20px;
+}
+
+.Nav2 img {
+  margin-bottom: 30px;
 }
 
 .foot {
-  /*padding*/
   padding: 30px;
-  /****display flex ****/
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,10 +229,276 @@ p {
 }
 
 .foot__icon--sm {
-  /*size*/
   width: 60px;
 }
 
 .foot__titulo--md {
   font-size: 2rem;
+}
+
+.bg-blue {
+  background-color: rgba(15, 26, 128, 0.7);
+}
+
+.bg-lblue {
+  background-color: rgb(34, 149, 172);
+}
+
+.bgLight {
+  background-color: rgb(179, 202, 245);
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.linear-gradient {
+  background: linear-gradient(to right, rgb(192, 255, 206), rgb(4, 126, 4));
+}
+
+.transform:hover {
+  transform: translate(-10px, 10px);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.rotate:hover {
+  transform: rotateZ(-360deg);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.scale:hover {
+  transform: scaleX(0.8);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.skew:hover {
+  transform: skewX(10deg);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+@-webkit-keyframes headerAnimation {
+  0% {
+    background-image: url(../img/FIGO_PROJECT2.jpg);
+  }
+  25% {
+    background-image: url(../img/FIGO_PROJECT1.webp);
+  }
+  50% {
+    background-image: url(../img/FIGO_PROJECT3.jpg);
+  }
+  75% {
+    background-image: url(../img/FIGO_TRUCK.jpeg);
+  }
+  100% {
+    background-image: url(../img/FIGO_TRUCK2.jpg);
+  }
+}
+
+@keyframes headerAnimation {
+  0% {
+    background-image: url(../img/FIGO_PROJECT2.jpg);
+  }
+  25% {
+    background-image: url(../img/FIGO_PROJECT1.webp);
+  }
+  50% {
+    background-image: url(../img/FIGO_PROJECT3.jpg);
+  }
+  75% {
+    background-image: url(../img/FIGO_TRUCK.jpeg);
+  }
+  100% {
+    background-image: url(../img/FIGO_TRUCK2.jpg);
+  }
+}
+header {
+  height: 40vh;
+  width: 100%;
+  background-size: cover;
+  -webkit-animation-name: headerAnimation;
+          animation-name: headerAnimation;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+button {
+  width: 100px;
+  height: 25px;
+  background: linear-gradient(to border-radius, rgb(114, 150, 204), rgb(6, 4, 121));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin-left: 50px;
+  border: none;
+  border-radius: 4px;
+  transition: all 2s;
+}
+
+button:hover {
+  background: linear-gradient(to top, rgb(82, 150, 206), rgb(7, 28, 121));
+  cursor: pointer;
+}
+
+.bg-blue {
+  background-color: rgba(15, 26, 128, 0.7);
+}
+
+.bg-lblue {
+  background-color: rgb(34, 149, 172);
+}
+
+.bgLight {
+  background-color: rgb(179, 202, 245);
+}
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "productos" "filtros" "aside" "footer";
+}
+
+/*layout*/
+#mainNav {
+  grid-area: nav;
+}
+
+#header {
+  grid-area: header;
+}
+
+#filtros {
+  grid-area: filtros;
+}
+
+#productos {
+  grid-area: productos;
+}
+
+#aside {
+  background-color: rgba(8, 22, 97, 0.966);
+  padding: 20px 0;
+  grid-area: aside;
+}
+
+#footer {
+  grid-area: footer;
+}
+
+#productos .galeria figure img {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}
+
+#productos .galeria figure figcaption {
+  font-size: 3.5rem;
+  color: black;
+  padding: 10px 0;
+  background-color: rgb(192, 201, 212);
+  text-align: center;
+}
+
+#productos .galeria p.price {
+  font-size: 3rem;
+  color: rgba(11, 35, 100, 0.5);
+  padding-bottom: 10px;
+  background-color: rgb(157, 201, 195);
+  text-align: center;
+}
+
+.Nav2 {
+  background-color: rgba(164, 224, 211, 0.8);
+  color: black;
+  padding: 10px 30px;
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Nav2 form {
+  margin-bottom: 20px;
+}
+
+.Nav2 img {
+  margin-bottom: 30px;
+}
+
+/* ======================= media queries INDEX ======================= */
+/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: 30vw 70vw;
+    grid-template-areas: "nav nav" "header header" "filtros productos" "aside aside" "footer footer";
+  }
+}
+#productos .galeria {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#productos .galeria figure {
+  width: 90%;
+}
+
+#aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    display: grid;
+    grid-template-columns: 20vw 70vw 10vw;
+    grid-template-rows: auto;
+    grid-template-areas: "nav nav nav" "header header header" "filtros productos aside" "footer footer footer";
+  }
+  #aside {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  #aside img {
+    width: 70%;
+  }
+  #productos .galeria figure {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  #productos .galeria {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  #productos .galeria figure {
+    width: 30%;
+  }
 }/*# sourceMappingURL=styleSASS.css.map */

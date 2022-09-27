@@ -6,7 +6,7 @@ $secondFont: 'Roboto', sans-serif;
 //Typography
 
 $textBig:4rem;
-$textMed:2.5rem;
+$textMed:3rem;
 $textSm:2.0rem;
 
 $textBold: 800;
@@ -17,11 +17,12 @@ $textCenter:center;
 $textJustify:justify;
 $textRight:right;
 $textLeft:Left;
-$firstColor: rgba(20, 111, 196, 0.5);
-$secondColor:rgb(200, 219, 190);
+$firstColor:  rgba(15, 26, 128, 0.7);
+$secondColor:rgb(34, 149, 172);
 $thirdColor:rgb(179, 202, 245);
 $WA_color:#27af2e;
 $White_color:white;
+$Black_color:black;
 
 .bg-blue{
     background-color:  $firstColor;

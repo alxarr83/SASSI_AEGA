@@ -1,0 +1,27 @@
+.linear-gradient {
+  background: linear-gradient(to right, rgb(192, 255, 206), rgb(4, 126, 4));
+}
+
+.transform:hover {
+  transform: translate(-10px, 10px);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.rotate:hover {
+  transform: rotateZ(-360deg);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.scale:hover {
+  transform: scaleX(0.8);
+  cursor: pointer;
+  transition: transform 1s;
+}
+
+.skew:hover {
+  transform: skewX(10deg);
+  cursor: pointer;
+  transition: transform 1s;
+}/*# sourceMappingURL=animations.css.map */

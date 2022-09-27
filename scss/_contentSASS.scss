@@ -4,17 +4,15 @@
 	text-align: center;
     width: 100%;
 	background-color: #27af2e;
-    color:  white;
+    color: $White_color;
     font-size: 2.25rem;
-    
-	/*padding*/
 	padding: 4px 0;
     font-weight: 800   
 }
 
-.buttons {
-    background-color: $firstColor;
-    /*position*/
+.buttonsMenu {
+    
+    /*position background-color: rgba(20, 111, 196, 0.5);*/
     position: sticky;
     top: 0;
     /*padding*/
@@ -22,40 +20,17 @@
     /****display flex *****/
     /* --- NAV EN COLUMNA EN MOBILE --- */
     display: flex;
+    flex-direction: column;
     align-items: center;
-    flex-direction: row;
-	justify-content: right;
+    justify-content: center;
 }
-
-.buttons img{
-    width: 200px;
-    margin-bottom: 30px;
-}
-
-.buttons ul{
-    /****display flex****/
-    display: flex;
-}
-
-.buttons ul li{
-    list-style: none;
-    margin-right: 20px;
-}
-
-    .buttons ul li a{
-        font-size: 1.8rem;
-        text-decoration: none;
-        color: rgba(135, 188, 196, 0.966)
-    }
-
     /*hover*/
-    .buttons ul li a:hover{
+    .buttonsMenu ul li a:hover{
         color: black;
-        font-weight: 600;
+      font-weight: 600;
     }
 
 .encabezado__img--fluid{
-	/*size*/
 	width: 100%;
 } 
 
@@ -67,54 +42,91 @@ body {
     background-attachment: fixed;
 }
 
-/*Main*/
-
-main ul li{
-    list-style: disc;
-    color: rgb(200, 219, 190);
-    text-decoration: none;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 2.25rem;
-    margin-left: 30px;
+.textMenu{
+    font-weight: $textBold;
+	font-size: $textSm;
+	color:$White_color;
 }
 
-/*main section p{
-   // color: rgb(200, 219, 190);
-    font-family:'Source Sans Pro', sans-serif;
-    font-size: 2.5rem;
-    line-height: 2.2rem;
-    font-weight: 800;
-}*/
-.text_p1{
+.textP1{
     font-family: 'Source Sans Pro', sans-serif;
-    color:$firstColor;
+    color: $firstColor;
     font-size: $textBig;
+    text-align: $textCenter;
+    size: $textBold;
 }
 
+.textList{
+    color:$thirdColor;
+	line-height: $textBig;
+	font-size: $textMed;
+}
+
+.text_Justify{
+    text-align: $textJustify;
+}
+
+.textBold{
+	font-weight: 600;
+}
+
+.textCenter{
+	text-align: center;
+}
+
+.textRight{
+	text-align: right;
+}
+
+.textLeft{
+	text-align: left;
+}
 
 h1{
 
-    @extend .text_p1;
-   
+    @extend .textP1;
+    color:$Black_color;
+   background-color: $secondColor;
     
 }
 
 h2{
-    @extend .text_p1;
+    @extend .textP1;
     color: $thirdColor;
-    font-size: 3.8rem;
+    font-size: $textBig;
 }
 
 h3{
-    @extend .text_p1;
+    @extend .textP1;
     color: $thirdColor;
-    font-size: 3rem;
+    font-size: $textMed;
 }
 
 p{
-    @extend .text_p1;
-	color:#e8f3f3;
-	line-height: 2rem;
-	font-size: 1.6rem;
+	@extend .textList;
     
 }
+
+.encabezado__img--fluid{
+	/*size*/
+	width: 100%;
+} 
+
+.Nav2{
+	background-color: rgba(164, 224, 211, 0.8);
+	color:$Black_color;
+	padding: 10px 30px;
+	font-size: $textMed;
+	line-height: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.Nav2 form{
+		margin-bottom: 20px;
+	}
+
+	.Nav2 img{
+		margin-bottom: 30px;
+	}

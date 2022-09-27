@@ -1,0 +1,159 @@
+@import "_commonsSASS";
+
+.container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav" 
+	"header" 
+	"productos" 
+	"filtros" 
+	"aside" 
+	"footer";
+}
+
+/*layout*/
+#mainNav{
+	grid-area: nav;
+}
+
+#header{
+	grid-area: header;
+}
+
+#filtros{
+	grid-area: filtros;
+}
+
+#productos{
+	grid-area: productos;
+}
+
+#aside{
+	background-color: rgba(8, 22, 97, 0.966);
+	padding: 20px 0;
+	grid-area: aside;    
+
+}
+
+#footer{
+	grid-area: footer;
+}
+
+#productos .galeria figure img{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	width: 100%;
+}
+
+#productos .galeria figure figcaption{
+	font-size: 3.5rem;
+	color: black;
+	padding: 10px 0;
+	background-color: rgb(192, 201, 212);
+	text-align: center;
+}
+
+#productos .galeria p.price{
+	font-size: 3rem;
+	color: rgba(11, 35, 100, 0.5) ;
+	padding-bottom: 10px;
+	background-color: rgb(157, 201, 195);
+	text-align: center;
+}
+
+.Nav2{
+	background-color: rgba(164, 224, 211, 0.8);
+	color:black ;
+	padding: 10px 30px;
+	font-size: 1.8rem;
+	line-height: 1.5em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+	.Nav2 form{
+		margin-bottom: 20px;
+	}
+
+	.Nav2 img{
+		margin-bottom: 30px;
+	}
+
+
+/* ======================= media queries INDEX ======================= */
+
+/* min-width: 768px definimos 2cols (30VW - 70VW) y 5 rows auto */
+@media (min-width: 768px){
+	.container{
+		grid-template-columns: 30vw 70vw;
+		grid-template-areas: 
+		"nav nav" 
+		"header header" 
+		"filtros productos"
+		"aside aside" 
+		"footer footer";
+	}
+
+}
+
+#productos .galeria{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
+#productos .galeria figure{
+	width: 90%;
+}
+
+#aside{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+
+@media (min-width: 1024px){
+
+.container{
+	display: grid;
+	grid-template-columns: 20vw 70vw 10vw;
+	grid-template-rows: auto;
+	grid-template-areas: 
+	"nav nav nav" 
+	"header header header" 
+	"filtros productos aside" 
+	"footer footer footer";
+}
+
+#aside{
+	flex-direction: column;
+	justify-content: flex-start;
+}
+
+#aside img{
+	width: 70%;
+}
+
+#productos .galeria figure{
+	width: 80%;
+}
+
+}
+
+@media (min-width: 1200px){
+
+#productos .galeria{
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+	#productos .galeria figure{
+		width: 30%;
+	}
+
+}

@@ -1,18 +1,19 @@
 @import "_commonsSASS";
 
-/*
-@mixin text_p ($size,$interline,$color){
+
+@mixin textP ($size,$interline,$color){
 	font-size: $size;
 	line-height: $interline;
 	color:$color;
 	padding: 10px;
 	font-family: $firstFont;
 	font-weight: $textBold;
-}*/
+}
+
 
 $textP: (
 	fontSize1: 2.5rem,
-	lineHeight1: 2.2REM,
+	lineHeight1: 2rem,
 	color2:$secondColor,
 	padding1: 10px,
 	fontFamily1: $firstFont,
@@ -37,25 +38,11 @@ $textP: (
 	font-family: map-get($textP , fontFamily1 );
 	font-weight: map-get($textP, fontWeight1 );
 	@include boxes(90%,auto ,50px auto ,40px 20px );
-    border: dotted #0f1a80b3 2px;
-    background-color: rgba(55, 113, 121, 0.966) ;
+    border: dotted $firstColor 2px;
+    background-color: $firstColor ;
     overflow-y: auto;
 }
 
-/*
-.box-titlel{
-	font-size: $textBig;
-}
-
-.box-title2{
-	font-size: 3rem;
-}
-
-.box_titlem{
-	font-size: 2rem;
-	margin: 5px 0;
-    margin-bottom: 30px;
-}*/
 
 .box_Img {
 	@include boxes(985px,415px,20px 30px ,30px auto );

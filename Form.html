@@ -6,85 +6,70 @@
     <title>Cotizar FIGO</title>
     <link rel="shortcut icon" href="img/FIGO_ICON.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleSASS.css">
 </head>
   <body>
     
-    <nav class="navbar navbar-expand-lg navbar-light bg-blue" id="buttons">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="img/FIGO_LOGO2.jpg" alt="logo de FIGO" class="header__img--fluid">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link textBold" aria-current="page" href="#">Mision</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link textBold" href="#">Visión</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link textBold" href="#">Proyectos</a>
-              </li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle textBold" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Solicitar
-                </a>
-                <ul class="dropdown-menu textBlack" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item textBlack" href="#">Cotizaciones</a></li>
-                  <li><a class="dropdown-item textBlack" href="#">Contactos</a></li>
-                  <li><hr class="dropdown-divider textBlack"></li>
-                  <li><a class="dropdown-item textBlack" href="#">Acerca de</a></li>
-                </ul>
-              </li>
-              </ul>
+    <nav class="navbar navbar-expand-lg navbar-light bg-blue buttonsMenu" id="buttons">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="img/FIGO_LOGO2.jpg" alt="logo de FIGO" class="header__img--fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link textMenu" aria-current="page" href="misionyvision.html">Misión y Visión</a>
+            </li>
+            <li>
+              <a class="nav-link textMenu" aria-current="page" href="PyS - Animated.html">Productos/Servicios</a>
+            </li>
+            <li>
+              <a class="nav-link textMenu" aria-current="page" href="trayectoria.html">Proyectos/Clientes</a>
+            </li>
+            <li>
+              <a class="nav-link textMenu" aria-current="page" href="Form.html">Cotizaciones</a>
+           </li>
+          </ul>
           </div>
-        </div>
-      </nav>
-
-    <h1 class="textCenter">GRUPO INDUSTRIAL Y DE SERVICIOS FIGO</h1>
-
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/FIGO_PROJECT11.jpg" class="d-block w-100" alt="Aero_11">
-          </div>
-          <div class="carousel-item">
-            <img src="img/FIGO_TRUCK33.png" class="d-block w-100" alt="Truck_33">
-          </div>
-          <div class="carousel-item">
-            <img src="img/FIGO_PROJECT22.png" class="d-block w-100" alt="Aero_22">
-          </div>
-        </div>
       </div>
+    </nav>
+
+
+  <header>
+         
+ </header>
+
+ <a href="index.html">
+  <h1 class="text-center">  GRUPO INDUSTRIAL Y DE SERVICIOS FIGO</h1>
+  </a>
+
 
       <main class="py-3">
       <nav id="mainNav" class="bg-blue box">
         <form>
             <fieldset disabled>
-              <legend class="textBold">Cotizar</legend>
+              <legend class="textMenu">Cotizar</legend>
               <div class="mb-3">
-                <label for="disabledTextInput" class="form-label textBold">Nombre</label>
+                <label for="disabledTextInput" class="form-label textMenu">Nombre</label>
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="Nombre">
               </div>
               <div class="mb-3">
-                <label for="disabledTextInput" class="form-label textBold">Empresa</label>
+                <label for="disabledTextInput" class="form-label textMenu">Empresa</label>
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="Empresa">
               </div>
               <div class="mb-3">
-                <label for="disabledTextInput" class="form-label textBold">Correo Electrónico</label>
+                <label for="disabledTextInput" class="form-label textMenu">Correo Electrónico</label>
                 <input type="text" id="disabledTextInput" class="form-control" placeholder="Email">
               </div>
               <div class="mb-3">
-                <label for="disabledTextInput" class="form-label textBold">Solicitud</label>
+                <label for="disabledTextInput" class="form-label textMenu">Solicitud</label>
                 <textarea cols="10" rows="15" type="text" class="form-control" placeholder="Solicite su Presupuesto"></textarea>
               </div>
               
-              <button class="textBold">Enviar</button>
+              <button class="textMenu">Enviar</button>
             </fieldset>
           </form>
       </nav>
